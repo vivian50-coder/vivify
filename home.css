@@ -9,7 +9,7 @@
 body {
     height:100vh;
     background: #222;
-    color: #110d0d;
+    color: #aaa;
     font-family: system-ui,sans-serif;
 }
 a{text-decoration:none;
@@ -55,7 +55,9 @@ li>a{
     display:flex;
     justify-content:center;
     align-items:center;
-    /*border: 2px solid #e35;*/
+    background-size:25%;
+    background-repeat:no-repeat;
+    background-position:center;
 }
 #slider-btns{
     position:absolute;
@@ -81,7 +83,7 @@ li>a{
 }
 #slider-btns > a.on{
     width: 1rem;
-    background-color: #ccc;
+    background-color: blue;
 }
 #books{
     position:absolute;
@@ -98,7 +100,7 @@ li>a{
     font-size:180%;
     background-image: linear-gradient(to left,red, blue);
     background-clip:text;
-color: transparent, purple;
+    -webkit-text-fill-color:transparent;
 }
 #book-author{
     color: #888;
@@ -112,4 +114,19 @@ color: transparent, purple;
     padding:.5rem 1rem;
     width:fit-content;
     display: flex;align-items:center;gap: 0.5em;
+}
+#coffee{
+    background-image:url(new_term_at_malory_towers.jpg);
+}
+#smile{
+    background-image:url(winter_term_at_malory_towers.jpg);
+}
+#cakes_and_birthday{
+    background-image:url(summer_term_at_malory_towers.jpg);
+}
+#delivery_van{
+    background-image:url(fun_and_games_at_malory_towers.jpg);
+}
+#sponge_box{
+    background-image:url(david_copperfield.jpg);
 }
