@@ -29,7 +29,7 @@ li>a{
    
 }
 #banner{
-    background-color: #444;
+    /* background-color: #444; */
     height: 400px;
     position: relative;
 }
@@ -40,7 +40,6 @@ li>a{
     height: 100%;
     display:flex;
     align-items:center;
-    Justify-content:centeR;
     overflow-x:scroll;
     scroll-snap-type:x mandatory;
     scroll-behavior:smooth;
@@ -67,14 +66,22 @@ li>a{
     align-items:center;
     justify-content:center;
     gap:.3rem;
-    z-index:1;
+    z-index:3;
 }
 #slider-btns>a{
     display:inline-block;
-    height: 10px;
-    width:10px;
-    border-radius:50%;
-    background: color #777;
+    height:.4rem;
+    width:.4rem;
+    border-radius:.4rem;
+    background-color: #444;
+    transition:background-color .2s ease, width .2s ease;
+}
+#slider-btns>a:hover{
+    background-color:#777;
+}
+#slider-btns > a.on{
+    width: 1rem;
+    background-color: #ccc;
 }
 #books{
     position:absolute;
